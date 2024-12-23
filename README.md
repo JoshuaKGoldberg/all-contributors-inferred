@@ -1,6 +1,6 @@
 <h1 align="center">All Contributors Inferred</h1>
 
-<p align="center">Infers All Contributors settings from an existing README.md table and package.json. 🔄</p>
+<p align="center">Infers All Contributors settings from an existing README.md table and package.json. �</p>
 
 <p align="center">
 	<!-- prettier-ignore-start -->
