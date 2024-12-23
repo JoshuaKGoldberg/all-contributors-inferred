@@ -55,6 +55,17 @@ It may have the following required properties:
 The returned value is the same shape as you'd see in [`.all-contributorsrc` configuration options](https://allcontributors.org/docs/en/bot/configuration), but with everything optional.
 See the exported `InferredAllContributors` type.
 
+## Why?
+
+[All Contributors](https://allcontributors.org) is one of many great pieces of tooling available for repositories.
+Repositories that use many tools often end up with a dauntingly large number of configuration files -- over a dozen in many cases.
+
+Many users find it exhausting and overwhelming to open a new repository with many config files.
+Reducing the number of config files in repositories can help make developing them more approachable.
+
+> 💡 Wish this was built into All Contributors?
+> Lend a 👍 to [all-contributors/all-contributors#808 Make the .all-contributorsrc file optional (infer contributors from README.md)](https://github.com/all-contributors/all-contributors/issues/808)!
+
 ## Development
 
 See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then [`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md).

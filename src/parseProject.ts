@@ -5,7 +5,7 @@ import { withoutUndefinedProperties } from "without-undefined-properties";
 import { AllContributorsData } from "./types.js";
 
 export function parseProject(
-	packageJson: PackageJson,
+	packageJson: PackageJson.PackageJsonStandard,
 ): Partial<AllContributorsData> | undefined {
 	switch (typeof packageJson.repository) {
 		case "object": {

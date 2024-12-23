@@ -2,7 +2,7 @@ import { PackageJson } from "type-fest";
 
 export interface InferAllContributorsOptions {
 	overrides?: Partial<AllContributorsData>;
-	packageJson: PackageJson;
+	packageJson: PackageJson.PackageJsonStandard;
 	readmeMd: string;
 }
 
