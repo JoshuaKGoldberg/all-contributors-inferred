@@ -1,6 +1,6 @@
 {
 	"name": "all-contributors-inferred",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Infers All Contributors settings from an existing README.md table and package.json. 🔄",
 	"repository": {
 		"type": "git",
