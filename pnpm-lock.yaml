@@ -12,8 +12,8 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5
       hosted-git-info:
-        specifier: ^8.0.2
-        version: 8.0.2
+        specifier: ^9.0.0
+        version: 9.0.0
       htmlparser2:
         specifier: ^10.0.0
         version: 10.0.0
@@ -2538,6 +2538,10 @@ packages:
   hosted-git-info@8.0.2:
     resolution: {integrity: sha512-sYKnA7eGln5ov8T8gnYlkSOxFJvywzEx9BueN6xo/GKO8PGiI6uK6xx+DIGe45T3bdVjLAQDQW1aicT8z8JwQg==}
     engines: {node: ^18.17.0 || >=20.5.0}
+
+  hosted-git-info@9.0.0:
+    resolution: {integrity: sha512-gEf705MZLrDPkbbhi8PnoO4ZwYgKoNL+ISZ3AjZMht2r3N5tuTwncyDi6Fv2/qDnMmZxgs0yI8WDOyR8q3G+SQ==}
+    engines: {node: ^20.17.0 || >=22.9.0}
 
   html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
@@ -6828,6 +6832,10 @@ snapshots:
   hosted-git-info@8.0.2:
     dependencies:
       lru-cache: 10.4.3
+
+  hosted-git-info@9.0.0:
+    dependencies:
+      lru-cache: 11.1.0
 
   html-escaper@2.0.2: {}
 

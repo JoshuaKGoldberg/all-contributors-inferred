@@ -36,7 +36,7 @@
 	},
 	"dependencies": {
 		"@types/hosted-git-info": "^3.0.5",
-		"hosted-git-info": "^8.0.2",
+		"hosted-git-info": "^9.0.0",
 		"htmlparser2": "^10.0.0",
 		"without-undefined-properties": "^0.1.1"
 	},
