@@ -5,6 +5,7 @@ import { ElementOfName } from "./dom.ts";
 import { parseImageSize } from "./parseImageSize.ts";
 
 function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-class-instance-assignment -- test fake
 	return {
 		children: [],
 		type: ElementType.Tag,
@@ -13,6 +14,7 @@ function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
 }
 
 function createFakeImg(overrides?: Partial<ElementOfName<"img">>) {
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-class-instance-assignment -- test fake
 	return {
 		name: "img",
 		type: ElementType.Tag,

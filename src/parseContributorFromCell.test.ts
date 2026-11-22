@@ -5,6 +5,7 @@ import { ElementOfName } from "./dom.ts";
 import { parseContributorFromCell } from "./parseContributorFromCell.ts";
 
 function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-class-instance-assignment -- test fake
 	return {
 		attribs: {},
 		children: [createFakeImg()],
@@ -14,6 +15,7 @@ function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
 }
 
 function createFakeContribution(overrides?: Partial<ElementOfName<"a">>) {
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-class-instance-assignment -- test fake
 	return {
 		attribs: {
 			href: "",
@@ -26,6 +28,7 @@ function createFakeContribution(overrides?: Partial<ElementOfName<"a">>) {
 }
 
 function createFakeImg(overrides?: Partial<ElementOfName<"img">>) {
+	// eslint-disable-next-line @typescript-eslint/no-unsafe-class-instance-assignment -- test fake
 	return {
 		attribs: {
 			src: "",
