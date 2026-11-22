@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import { parseContributorsSortAlphabetically } from "./parseContributorsSortAlphabetically.js";
-import { Contributor } from "./types.js";
+import { parseContributorsSortAlphabetically } from "./parseContributorsSortAlphabetically.ts";
+import { Contributor } from "./types.ts";
 
 function createFakeContributor(overrides?: Partial<Contributor>) {
 	return {
@@ -14,7 +14,7 @@ function createFakeContributor(overrides?: Partial<Contributor>) {
 	};
 }
 
-describe("parseContributorsSortAlphabetically", () => {
+describe(parseContributorsSortAlphabetically, () => {
 	it("returns undefined when there are no contributors", () => {
 		const actual = parseContributorsSortAlphabetically([]);
 

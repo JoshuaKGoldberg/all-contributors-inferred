@@ -1,8 +1,8 @@
 import { ElementType } from "htmlparser2";
 import { describe, expect, it } from "vitest";
 
-import { ElementOfName } from "./dom.js";
-import { parseImageSize } from "./parseImageSize.js";
+import { ElementOfName } from "./dom.ts";
+import { parseImageSize } from "./parseImageSize.ts";
 
 function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
 	return {
@@ -20,7 +20,7 @@ function createFakeImg(overrides?: Partial<ElementOfName<"img">>) {
 	} as ElementOfName<"img">;
 }
 
-describe("parseImageSize", () => {
+describe(parseImageSize, () => {
 	it("returns undefined when there are no cells", () => {
 		const actual = parseImageSize([]);
 

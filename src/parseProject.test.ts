@@ -1,8 +1,8 @@
 import { describe, expect, test } from "vitest";
 
-import { parseProject } from "./parseProject.js";
+import { parseProject } from "./parseProject.ts";
 
-describe("parseProject", () => {
+describe(parseProject, () => {
 	test.each([
 		[{}, undefined],
 		[{ repository: "" }, undefined],

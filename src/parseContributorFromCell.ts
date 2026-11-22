@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
 import { withoutUndefinedProperties } from "without-undefined-properties";
 
-import { isTagOfName } from "./dom.js";
-import { ContributorCells } from "./parseAllContributorCells.js";
-import { Contributor } from "./types.js";
+import { isTagOfName } from "./dom.ts";
+import { ContributorCells } from "./parseAllContributorCells.ts";
+import { Contributor } from "./types.ts";
 
 /**
  * @see https://allcontributors.org/docs/en/emoji-key

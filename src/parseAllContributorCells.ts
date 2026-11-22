@@ -1,6 +1,6 @@
 import { parseDocument } from "htmlparser2";
 
-import { ElementOfName, toTagOfNameWithChildren } from "./dom.js";
+import { ElementOfName, toTagOfNameWithChildren } from "./dom.ts";
 
 export interface ContributorCells {
 	avatar?: ElementOfName<"a">;

@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
-import { parseBadgeTemplate } from "./parseBadgeTemplate.js";
+import { parseBadgeTemplate } from "./parseBadgeTemplate.ts";
 
-describe("parseBadgeTemplate", () => {
+describe(parseBadgeTemplate, () => {
 	it("returns undefined when the locator comment does not exist", () => {
 		const actual = parseBadgeTemplate(
 			2,

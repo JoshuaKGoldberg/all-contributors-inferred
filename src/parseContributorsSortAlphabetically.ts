@@ -1,4 +1,4 @@
-import { Contributor } from "./types.js";
+import { Contributor } from "./types.ts";
 
 export function parseContributorsSortAlphabetically(
 	contributors: Partial<Contributor>[],

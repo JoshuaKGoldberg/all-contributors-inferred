@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 
-import { parseAllContributorCells } from "./parseAllContributorCells.js";
+import { parseAllContributorCells } from "./parseAllContributorCells.ts";
 
-describe("parseAllContributorCells", () => {
+describe(parseAllContributorCells, () => {
 	it("returns [] when the locator comment does not exist", () => {
 		const actual = parseAllContributorCells(
 			`ALL-CONTRIBUTORS-BADGE:START (invalid) ALL-CONTRIBUTORS-BADGE:END`,

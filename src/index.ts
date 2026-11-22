@@ -1,2 +1,2 @@
-export * from "./inferAllContributors.js";
-export type * from "./types.js";
+export * from "./inferAllContributors.ts";
+export type * from "./types.ts";
