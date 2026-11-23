@@ -94,4 +94,26 @@ describe("parseImageSize", () => {
 
 		expect(actual).toBe(123);
 	});
+
+	it.each([
+		["&size=100", undefined],
+		["&size=123", 123],
+	])("parses an image size in the form of %s", (size, expected) => {
+		const actual = parseImageSize([
+			{
+				avatar: createFakeAvatar({
+					children: [
+						createFakeImg({
+							attribs: {
+								src: `https://avatars.githubusercontent.com/u/3335181?v=4${size}`,
+							},
+						}),
+					],
+				}),
+				contributions: [],
+			},
+		]);
+
+		expect(actual).toBe(expected);
+	});
 });
