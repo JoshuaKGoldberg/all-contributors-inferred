@@ -8,7 +8,7 @@ export function parseImageSize(cells: Partial<ContributorCells>[]) {
 		const imageSize = Number(
 			cell.avatar?.children
 				.find((child) => isTagOfName(child, "img"))
-				?.attribs.src.match(/\??s=(\d+)$/)?.[1],
+				?.attribs.src.match(/[?&]s(?:ize)?=(\d+)$/)?.[1],
 		);
 
 		if (imageSize && imageSize !== defaultImageSize) {

@@ -79,4 +79,26 @@ describe(parseContributorFromCell, () => {
 			profile: "https://www.joshuakgoldberg.com",
 		});
 	});
+
+	it.each(["?s=100", "&s=100", "&size=100"])(
+		"removes the image size from avatar_url when it ends with %s",
+		(size) => {
+			const actual = parseContributorFromCell({
+				avatar: createFakeAvatar({
+					children: [
+						createFakeImg({
+							attribs: {
+								src: `https://avatars.githubusercontent.com/u/3335181?v=4${size}`,
+							},
+						}),
+					],
+				}),
+				contributions: [createFakeContribution()],
+			});
+
+			expect(actual).toEqual({
+				avatar_url: "https://avatars.githubusercontent.com/u/3335181?v=4",
+			});
+		},
+	);
 });

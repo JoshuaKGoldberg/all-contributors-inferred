@@ -45,7 +45,7 @@ export function parseContributorFromCell(
 		.filter(Boolean);
 
 	return withoutUndefinedProperties({
-		avatar_url: img?.attribs.src.replace(/\??s=\d+$/, "") || undefined,
+		avatar_url: img?.attribs.src.replace(/[?&]s(?:ize)?=\d+$/, "") || undefined,
 		contributions: contributions?.length ? contributions : undefined,
 		login:
 			cells.contributions?.at(0)?.attribs.href.split(/%3A|=/).at(-1) ||
