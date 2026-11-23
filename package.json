@@ -1,6 +1,6 @@
 {
 	"name": "all-contributors-inferred",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Infers All Contributors settings from an existing README.md table and package.json. 💗",
 	"repository": {
 		"type": "git",
@@ -35,6 +35,7 @@
 		"@types/hosted-git-info": "^3.0.5",
 		"hosted-git-info": "^9.0.0",
 		"htmlparser2": "^10.0.0",
+		"type-fest": "^5.6.0",
 		"without-undefined-properties": "^0.1.1"
 	},
 	"devDependencies": {
@@ -70,7 +71,6 @@
 		"pretty-quick": "4.2.2",
 		"release-it": "21.1.0",
 		"tsdown": "0.23.0",
-		"type-fest": "5.6.0",
 		"typescript": "5.9.3",
 		"typescript-eslint": "8.73.0",
 		"vitest": "5.1.0"

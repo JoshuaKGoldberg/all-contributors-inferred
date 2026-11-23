@@ -17,6 +17,9 @@ importers:
       htmlparser2:
         specifier: ^10.0.0
         version: 10.1.0
+      type-fest:
+        specifier: ^5.6.0
+        version: 5.6.0
       without-undefined-properties:
         specifier: ^0.1.1
         version: 0.1.2
@@ -117,9 +120,6 @@ importers:
       tsdown:
         specifier: 0.23.0
         version: 0.23.0(oxc-resolver@11.24.2)(typescript@5.9.3)
-      type-fest:
-        specifier: 5.6.0
-        version: 5.6.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
