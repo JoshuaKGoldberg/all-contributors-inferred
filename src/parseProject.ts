@@ -1,8 +1,9 @@
+import type { PackageJson } from "type-fest";
+
 import hostedGitInfo from "hosted-git-info";
-import { PackageJson } from "type-fest";
 import { withoutUndefinedProperties } from "without-undefined-properties";
 
-import { AllContributorsData } from "./types.js";
+import { AllContributorsData } from "./types.ts";
 
 export function parseProject(
 	packageJson: PackageJson.PackageJsonStandard,

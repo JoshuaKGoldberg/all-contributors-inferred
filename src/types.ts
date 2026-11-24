@@ -1,4 +1,4 @@
-import { PackageJson } from "type-fest";
+import type { PackageJson } from "type-fest";
 
 export interface InferAllContributorsOptions {
 	overrides?: Partial<AllContributorsData>;
@@ -107,13 +107,7 @@ export interface AllContributorsData {
 }
 
 export type CommitConvention =
-	| "angular"
-	| "atom"
-	| "ember"
-	| "eslint"
-	| "gitmoji"
-	| "jshint"
-	| "none";
+	"angular" | "atom" | "ember" | "eslint" | "gitmoji" | "jshint" | "none";
 
 export interface Contributor {
 	avatar_url: string;

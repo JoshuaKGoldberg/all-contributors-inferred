@@ -1,13 +1,14 @@
-import { PartialDeep } from "type-fest";
+import type { PartialDeep } from "type-fest";
+
 import { withoutUndefinedProperties } from "without-undefined-properties";
 
-import { parseAllContributorCells } from "./parseAllContributorCells.js";
-import { parseBadgeTemplate } from "./parseBadgeTemplate.js";
-import { parseContributorFromCell } from "./parseContributorFromCell.js";
-import { parseContributorsSortAlphabetically } from "./parseContributorsSortAlphabetically.js";
-import { parseImageSize } from "./parseImageSize.js";
-import { parseProject } from "./parseProject.js";
-import { AllContributorsData, InferAllContributorsOptions } from "./types.js";
+import { parseAllContributorCells } from "./parseAllContributorCells.ts";
+import { parseBadgeTemplate } from "./parseBadgeTemplate.ts";
+import { parseContributorFromCell } from "./parseContributorFromCell.ts";
+import { parseContributorsSortAlphabetically } from "./parseContributorsSortAlphabetically.ts";
+import { parseImageSize } from "./parseImageSize.ts";
+import { parseProject } from "./parseProject.ts";
+import { AllContributorsData, InferAllContributorsOptions } from "./types.ts";
 
 export type InferredAllContributors = PartialDeep<
 	AllContributorsData,

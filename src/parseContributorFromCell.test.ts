@@ -1,8 +1,8 @@
 import { ElementType } from "htmlparser2";
 import { describe, expect, it } from "vitest";
 
-import { ElementOfName } from "./dom.js";
-import { parseContributorFromCell } from "./parseContributorFromCell.js";
+import { ElementOfName } from "./dom.ts";
+import { parseContributorFromCell } from "./parseContributorFromCell.ts";
 
 function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
 	return {
@@ -10,7 +10,7 @@ function createFakeAvatar(overrides?: Partial<ElementOfName<"a">>) {
 		children: [createFakeImg()],
 		type: ElementType.Tag,
 		...overrides,
-	} as ElementOfName<"a">;
+	} as unknown as ElementOfName<"a">;
 }
 
 function createFakeContribution(overrides?: Partial<ElementOfName<"a">>) {
@@ -22,7 +22,7 @@ function createFakeContribution(overrides?: Partial<ElementOfName<"a">>) {
 		name: "a",
 		type: ElementType.Tag,
 		...overrides,
-	} as ElementOfName<"a">;
+	} as unknown as ElementOfName<"a">;
 }
 
 function createFakeImg(overrides?: Partial<ElementOfName<"img">>) {
@@ -33,10 +33,10 @@ function createFakeImg(overrides?: Partial<ElementOfName<"img">>) {
 		name: "img",
 		type: ElementType.Tag,
 		...overrides,
-	} as ElementOfName<"img">;
+	} as unknown as ElementOfName<"img">;
 }
 
-describe("parseContributorFromCell", () => {
+describe(parseContributorFromCell, () => {
 	it("returns an empty object when data does not exist", () => {
 		const actual = parseContributorFromCell({
 			avatar: createFakeAvatar(),

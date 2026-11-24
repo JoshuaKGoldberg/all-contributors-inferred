@@ -1,5 +1,5 @@
-import { isTagOfName } from "./dom.js";
-import { ContributorCells } from "./parseAllContributorCells.js";
+import { isTagOfName } from "./dom.ts";
+import { ContributorCells } from "./parseAllContributorCells.ts";
 
 const defaultImageSize = 100;
 

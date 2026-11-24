@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { inferAllContributors } from "./inferAllContributors.js";
+import { inferAllContributors } from "./inferAllContributors.ts";
 
 const packageJson = {
 	repository: {
@@ -44,7 +44,7 @@ const readmeMd = `
 <!-- spellchecker: enable -->
 			`;
 
-describe("inferAllContributors", () => {
+describe(inferAllContributors, () => {
 	it("returns an empty object when no data is present", () => {
 		const actual = inferAllContributors({ packageJson: {}, readmeMd: "" });
 
