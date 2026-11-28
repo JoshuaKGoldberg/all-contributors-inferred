@@ -189,8 +189,8 @@ importers:
         specifier: ^3.0.5
         version: 3.0.5
       hosted-git-info:
-        specifier: ^9.0.0
-        version: 9.0.3
+        specifier: ^10.0.0
+        version: 10.1.1
       htmlparser2:
         specifier: ^10.0.0
         version: 10.1.0
